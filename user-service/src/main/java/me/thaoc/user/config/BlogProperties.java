@@ -13,4 +13,6 @@ import org.springframework.stereotype.Component;
 @Setter
 public class BlogProperties {
     private String greeting = "default";
+
+    private Integer pageSize = 1;
 }

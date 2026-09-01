@@ -6,7 +6,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/user")
 public class HelloController {
     private final BlogProperties configProperties;
 
@@ -17,5 +16,10 @@ public class HelloController {
     @GetMapping("/hello")
     public String hello() {
         return configProperties.getGreeting();
+    }
+
+    @GetMapping("/page-size")
+    public Integer pageSize() {
+        return configProperties.getPageSize();
     }
 }
