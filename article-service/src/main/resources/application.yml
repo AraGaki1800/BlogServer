@@ -6,12 +6,9 @@ spring:
       discovery:
         server-addr: 127.0.0.1:8848
         namespace: 1aa62330-29b4-45d0-93ac-d977556134b6
-        group: DEFAULT_GROUP】
       config:
         server-addr: 127.0.0.1:8848
         namespace: 1aa62330-29b4-45d0-93ac-d977556134b6
-        group: DEFAULT_GROUP
-        file-extension: yaml
   config:
     import:
       - nacos:article-service.yaml
