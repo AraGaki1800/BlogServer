@@ -3,12 +3,10 @@ package me.thaoc.user.web;
 import jakarta.annotation.Resource;
 import me.thaoc.common.config.CommConfig;
 import me.thaoc.user.config.AppConfig;
-import org.springframework.context.annotation.Import;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@Import(CommConfig.class)
 public class HelloController {
 
     @Resource
