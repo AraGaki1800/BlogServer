@@ -6,12 +6,12 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.stereotype.Component;
 
-@RefreshScope
 @Component
 @ConfigurationProperties(prefix = "blog")
+@RefreshScope
 @Getter
 @Setter
-public class BlogProperties {
+public class AppConfig {
     private String greeting = "default";
 
     private Integer pageSize = 1;
